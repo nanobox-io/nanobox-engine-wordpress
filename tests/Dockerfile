@@ -4,11 +4,11 @@ FROM nanobox/build
 RUN rm -rf /opt/engines/*
 
 # Create folders for this engine
-RUN mkdir -p /opt/engines/php/bin && \
-    mkdir -p /opt/engines/php/lib && \
-    mkdir -p /opt/engines/php/templates
+RUN mkdir -p /opt/engines/wordpress/bin && \
+    mkdir -p /opt/engines/wordpress/lib && \
+    mkdir -p /opt/engines/wordpress/templates
 
 # Add in this engine's files
-ADD bin/. /opt/engines/php/bin
-ADD lib/. /opt/engines/php/lib
-ADD templates/. /opt/engines/php/templates
+ADD bin/. /opt/engines/wordpress/bin
+ADD lib/. /opt/engines/wordpress/lib
+ADD templates/. /opt/engines/wordpress/templates

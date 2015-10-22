@@ -4,8 +4,5 @@
 
 # $1 = code_dir
 
-[[ -n "$(ls ${1}/*.php 2>/dev/null)" ]] && exit 0
-for subdir in $(find ${1} -type d); do
-	[[ -n "$(ls ${subdir}/*.php 2>/dev/null)" ]] && exit 0
-done
+[[ -n "$(ls ${1}/wp-login.php 2>/dev/null)" ]] && exit 0
 exit 1

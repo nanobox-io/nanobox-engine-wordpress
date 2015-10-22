@@ -1,13 +1,32 @@
-{{#has_bower}}
 build:
+{{#has_bower}}
   lib_dirs:
     - node_modules
     - bower_components
 {{/has_bower}}
+  php_extensions:
+    - curl
+    - dom
+    - filter
+    - ftp
+    - gd
+    - hash
+    - iconv
+    - json
+    - mbstring
+    - mysql
+    - xml
+    - simplexml
+    - sockets
+    - xmlreader
+    - zlib
 web1:
   ports:
     - 80:8080
     - 443:8080
+  network_dirs:
+    nfs1:
+      - wp-content/uploads
 {{#apache}}
 {{#fpm}}
   exec:
@@ -41,3 +60,7 @@ web1:
     php[access]: {{deploy_dir}}/var/log/php/access.log
     php[error]: {{deploy_dir}}/var/log/php/php_error.log
 {{/builtin}}
+mysql1:
+  name: wp-blog
+nfs1:
+  name: wp-content

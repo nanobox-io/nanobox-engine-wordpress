@@ -1,7 +1,7 @@
-echo running tests for php
+echo running tests for wordpress
 UUID=$(cat /proc/sys/kernel/random/uuid)
 
-pass "unable to start the $VERSION container" docker run --privileged=true -d --name $UUID nanobox/build-php sleep 365d
+pass "unable to start the $VERSION container" docker run --privileged=true -d --name $UUID nanobox/build-wordpress sleep 365d
 
 defer docker kill $UUID
 
@@ -11,4 +11,4 @@ pass "create dir for environment variables" docker exec $UUID mkdir -p /data/etc
 
 pass "Failed to update pkgsrc" docker exec $UUID /data/bin/pkgin up -y
 
-pass "Failed to run prepare script" docker exec $UUID bash -c "cd /opt/engines/php/bin; PATH=/data/sbin:/data/bin:\$PATH ./prepare '$(payload default-prepare)'"
+pass "Failed to run prepare script" docker exec $UUID bash -c "cd /opt/engines/wordpress/bin; PATH=/data/sbin:/data/bin:\$PATH ./prepare '$(payload default-prepare)'"

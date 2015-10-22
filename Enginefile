@@ -1,10 +1,10 @@
-name: 'php'
+name: 'wordpress'
 version: '0.1.0'
-summary: 'Nanobox engine for generic PHP deployments'
+summary: 'Nanobox engine for WordPress'
 language: 'php'
 stability: 'stable'
 license: 'MPL'
-generic: true
+generic: false
 
 authors:
   - braxton@nanobox.io

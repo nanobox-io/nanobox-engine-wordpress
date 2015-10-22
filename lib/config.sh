@@ -7,6 +7,7 @@
 . ${engine_lib_dir}/config/fpm.sh
 . ${engine_lib_dir}/config/general.sh
 . ${engine_lib_dir}/config/nginx.sh
+. ${engine_lib_dir}/config/wordpress.sh
 . ${engine_lib_dir}/config/php/apc.sh
 . ${engine_lib_dir}/config/php/eaccelerator.sh
 . ${engine_lib_dir}/config/php/general.sh

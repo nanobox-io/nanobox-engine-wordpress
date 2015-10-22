@@ -28,9 +28,6 @@ install_js_runtime
 npm_rebuild
 install_bower
 
-# persist all environment variables 
-persist_evars
-
 # configure apache or nginx
 configure_webserver
 

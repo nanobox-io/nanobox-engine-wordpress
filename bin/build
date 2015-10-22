@@ -14,6 +14,10 @@ nos_init $@
 # run Boxfile hooks defined in the "before" node
 run_hooks "before"
 
+# wordpress build tasks
+generate_salt
+create_wordpress_conf
+
 # run Boxfile hooks defined in the "exec" node
 run_hooks "exec"
 
