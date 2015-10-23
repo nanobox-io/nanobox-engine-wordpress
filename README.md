@@ -1,11 +1,12 @@
-# PHP
+# WordPress
 
-This is a generic PHP engine used to launch PHP web and worker services when using [Nanobox](http://nanobox.io). It exposes has a wide collection configuration options generally handled in the php.ini and other configuration files. Both PHP settings and web server settings are available. In theory, anything that can be done with a PHP framework engine can be done with this engine.
+This is a WordPress engine for [Nanobox](http://nanobox.io). This engine is based off of the basic PHP engine, and shares many of the configuration options from it.
 
 ## App Detection
-- To detect a PHP app, this engine looks for files with a `.php` extension.
+- To detect a WordPress app, this engine looks for a file named `wp-login.php`.
 
 ## Build Process
+- Generate wp-config.php.
 - `composer install`
 
 ## Basic Configuration Options
