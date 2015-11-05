@@ -25,18 +25,18 @@ wordpress_generate_salt() {
 }
 
 wordpress_mysql1_name() {
-  echo $(payload env_MYSQL1_NAME)
+  echo $(nos_payload env_MYSQL1_NAME)
 }
 
 wordpress_mysql1_user() {
-  echo $(payload env_MYSQL1_USER)
+  echo $(nos_payload env_MYSQL1_USER)
 }
 
 wordpress_mysql1_pass() {
-  echo $(payload env_MYSQL1_PASS)
+  echo $(nos_payload env_MYSQL1_PASS)
 }
 
 wordpress_mysql1_host() {
-  echo $(payload env_MYSQL1_HOST)
+  echo $(nos_payload env_MYSQL1_HOST)
 }
 

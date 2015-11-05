@@ -9,4 +9,6 @@ pass "Failed to create /opt/code directory" docker exec $UUID mkdir -p /opt/code
 
 pass "Failed to create /code directory" docker exec $UUID mkdir -p /code
 
+pass "Failed to create /mnt/cache/ directory" docker exec $UUID mkdir -p /mnt/cache/
+
 pass "Failed to run build script" docker exec $UUID bash -c "cd /opt/engines/wordpress/bin; ./build '$(payload default-build)'"
