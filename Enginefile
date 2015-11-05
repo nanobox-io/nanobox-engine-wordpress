@@ -5,6 +5,8 @@ language: 'php'
 stability: 'stable'
 license: 'MPL'
 generic: false
+overlays:
+  - php
 
 authors:
   - braxton@nanobox.io
