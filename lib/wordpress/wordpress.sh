@@ -20,7 +20,7 @@ END
 
 wordpress_generate_salt() {
   if [[ ! -f $(nos_cache_dir)/salt ]]; then
-    curl -o $(nos_cache_dir)/salt https://api.wordpress.org/secret-key/1.1/salt/
+    curl -k -o $(nos_cache_dir)/salt https://api.wordpress.org/secret-key/1.1/salt/
   fi
 }
 
