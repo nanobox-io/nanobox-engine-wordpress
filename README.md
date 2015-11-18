@@ -3,7 +3,7 @@
 This is a WordPress engine for [Nanobox](http://nanobox.io). This engine is based off of the basic PHP engine, and shares many of the configuration options from it.
 
 ## App Detection
-- To detect a WordPress app, this engine looks for a file named `wp-login.php`.
+- To detect a WordPress app, this engine looks for a directory named `wp-content`.
 
 ## Build Process
 - Generate wp-config.php.
