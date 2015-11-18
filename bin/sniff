@@ -4,5 +4,5 @@
 
 # $1 = code_dir
 
-[[ -n "$(ls ${1}/wp-login.php 2>/dev/null)" ]] && exit 0
+[[ -n "$(ls ${1}/wp-content 2>/dev/null)" ]] && exit 0
 exit 1
