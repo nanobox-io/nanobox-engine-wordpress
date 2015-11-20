@@ -518,7 +518,7 @@ build:
 ---
 
 ### Node.js Runtime Settings
-Many PHP applications utilize Javascript tools in some way. The most common use is static asset compilation. This engine allows you to specify which JS runtime you'd like to use.
+Many PHP applications utilize Javascript tools in some way. The most common use is static asset compilation. This engine allows you to specify which Node.js runtime you'd like to use.
 
 ---
 
@@ -528,11 +528,12 @@ Specifies which Node.js runtime and version to use. The following runtimes are a
 - nodejs-0.8
 - nodejs-0.10
 - nodejs-0.12
+- nodejs-4.2
 - iojs-2.3
 
 ```yaml
 build:
-  nodejs_runtime: 'nodejs-0.12'
+  nodejs_runtime: 'nodejs-4.2'
 ```
 
 ---

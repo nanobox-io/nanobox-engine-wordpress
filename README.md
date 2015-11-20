@@ -105,7 +105,7 @@ The following settings are typically configured in the php.ini. When using Nanob
 
 ---
 
-#### runtime
+#### php_runtime
 Specifies which PHP runtime and version to use. The following runtimes are available:
 
 - php-5.3
