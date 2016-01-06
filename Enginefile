@@ -1,5 +1,5 @@
 name: 'wordpress'
-version: '0.2.6'
+version: '0.2.7'
 summary: 'Nanobox engine for WordPress'
 language: 'php'
 stability: 'stable'

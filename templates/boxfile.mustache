@@ -22,8 +22,8 @@ build:
     - zlib
 web1:
   ports:
-    - 80:8080
-    - 443:8080
+    - http:80:8080
+    - http:443:8080
   network_dirs:
     nfs1:
       - wp-content/uploads
